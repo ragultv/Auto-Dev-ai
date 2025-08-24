@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from .models import Base
 
 # Database configuration
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:ragul%402004@localhost:5432/autodev")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:bersha%4002@localhost:5432/autodev")
 
 # For SQLite (development)
 # DATABASE_URL = "sqlite:///./aiml_pipeline.db"

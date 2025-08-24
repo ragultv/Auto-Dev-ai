@@ -33,6 +33,7 @@ def login(
     refresh_token_expires = timedelta(days=REFRESH_TOKEN_EXPIRE_DAYS)
 
     return {
+        # "user_id": users.id,
         "access_token": create_access_token(data={"sub": str(user.id)}, expires_delta=access_token_expires),
         "refresh_token": create_refresh_token(data={"sub": str(user.id)}, expires_delta=refresh_token_expires),
         "token_type": "bearer"
